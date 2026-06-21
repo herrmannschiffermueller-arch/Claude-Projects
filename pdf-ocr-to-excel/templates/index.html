@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>PDF OCR zu Excel (Mistral OCR)</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 640px;
+      margin: 60px auto;
+      padding: 0 20px;
+      color: #1d1d1f;
+    }
+    h1 { font-size: 1.5rem; }
+    label { display: block; margin-top: 16px; font-weight: 600; }
+    input[type="text"], input[type="password"], input[type="file"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 24px;
+      padding: 10px 20px;
+      background: #2d6cdf;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover { background: #1f56b8; }
+    .flash {
+      background: #ffe5e5;
+      border: 1px solid #ff9b9b;
+      padding: 10px;
+      border-radius: 6px;
+      margin-top: 16px;
+    }
+    .hint { color: #666; font-size: 0.9rem; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <h1>PDF → Excel mit Mistral OCR</h1>
+  <p>Lade eine PDF-Datei hoch. Der Text wird per Mistral OCR erkannt und als Excel-Datei (eine Tabelle pro Seite) zum Download bereitgestellt.</p>
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+
+  <form action="{{ url_for('convert') }}" method="post" enctype="multipart/form-data">
+    <label for="pdf_file">PDF-Datei</label>
+    <input type="file" id="pdf_file" name="pdf_file" accept="application/pdf" required>
+
+    <label for="api_key">Mistral API-Key {% if has_key %}(optional, .env wird verwendet){% endif %}</label>
+    <input type="password" id="api_key" name="api_key" placeholder="{{ 'leer lassen für .env Key' if has_key else 'sk-...' }}" {{ '' if has_key else 'required' }}>
+    <div class="hint">Der Key wird nicht gespeichert, nur für diese Anfrage verwendet.</div>
+
+    <button type="submit">In Excel umwandeln</button>
+  </form>
+</body>
+</html>
