@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HSC SA – Moderne Vereinswebsite</title>
+  <meta name="description" content="HSC SA – Verein, News, Mannschaften und Kontakt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">HSC <span>SA</span></a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#ueber-uns">Über uns</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#mannschaften">Mannschaften</a></li>
+          <li><a href="#termine">Termine</a></li>
+          <li><a href="#kontakt" class="nav-cta">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Gemeinsam stark.<br>Willkommen beim HSC SA.</h1>
+        <p>Verein, Mannschaft, Gemeinschaft – aktuelle Neuigkeiten, Termine und alles rund um unseren Club.</p>
+        <div class="hero-actions">
+          <a href="#mannschaften" class="btn btn-primary">Mannschaften entdecken</a>
+          <a href="#kontakt" class="btn btn-outline">Mitglied werden</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="ueber-uns" class="section">
+      <div class="container">
+        <h2 class="section-title">Über uns</h2>
+        <div class="grid-2">
+          <p>
+            Der HSC SA steht seit Jahren für sportliche Leistung, Teamgeist und ein starkes
+            Vereinsleben. Hier ersetzt du diesen Platzhaltertext durch die echte Vereinsgeschichte,
+            Werte und Ziele von hsc-sa.de.
+          </p>
+          <p>
+            Egal ob Leistungssport oder Freizeitspaß – bei uns findet jede:r den passenden Platz
+            im Team. Trainer:innen, Eltern und Mitglieder gestalten den Verein gemeinsam.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Aktuelles</h2>
+        <div class="card-grid">
+          <article class="card">
+            <span class="card-tag">News</span>
+            <h3>Saisonstart 2026/27</h3>
+            <p>Kurze Vorschau-Info zum Saisonauftakt – Datum, Gegner, Anpfiff.</p>
+            <a href="#" class="card-link">Weiterlesen →</a>
+          </article>
+          <article class="card">
+            <span class="card-tag">Verein</span>
+            <h3>Neue Trainingszeiten</h3>
+            <p>Übersicht der aktuellen Trainingszeiten für alle Altersklassen.</p>
+            <a href="#" class="card-link">Weiterlesen →</a>
+          </article>
+          <article class="card">
+            <span class="card-tag">Event</span>
+            <h3>Sommerfest</h3>
+            <p>Save the date – Infos zum nächsten Vereinsfest folgen in Kürze.</p>
+            <a href="#" class="card-link">Weiterlesen →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="mannschaften" class="section">
+      <div class="container">
+        <h2 class="section-title">Mannschaften</h2>
+        <div class="card-grid card-grid-4">
+          <div class="team-card">
+            <div class="team-thumb">A</div>
+            <h3>1. Herren</h3>
+            <p>Liga · Trainingszeiten · Ansprechpartner</p>
+          </div>
+          <div class="team-card">
+            <div class="team-thumb">B</div>
+            <h3>1. Damen</h3>
+            <p>Liga · Trainingszeiten · Ansprechpartner</p>
+          </div>
+          <div class="team-card">
+            <div class="team-thumb">C</div>
+            <h3>Jugend</h3>
+            <p>Altersklassen · Trainingszeiten</p>
+          </div>
+          <div class="team-card">
+            <div class="team-thumb">D</div>
+            <h3>Kinder</h3>
+            <p>Schnuppertraining · Anmeldung</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="termine" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Termine</h2>
+        <ul class="event-list">
+          <li>
+            <time>21.06.2026</time>
+            <span>Heimspiel 1. Herren vs. Gastteam</span>
+          </li>
+          <li>
+            <time>28.06.2026</time>
+            <span>Jugendturnier</span>
+          </li>
+          <li>
+            <time>05.07.2026</time>
+            <span>Mitgliederversammlung</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2 class="section-title">Kontakt</h2>
+          <p>Fragen zur Mitgliedschaft, zum Training oder zum Verein? Wir freuen uns auf deine Nachricht.</p>
+          <ul class="contact-info">
+            <li>📍 Musterstraße 1, 12345 Musterstadt</li>
+            <li>✉️ info@hsc-sa.de</li>
+            <li>📞 0123 456789</li>
+          </ul>
+        </div>
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Nachricht</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Senden</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 HSC SA. Alle Rechte vorbehalten.</p>
+      <ul class="footer-links">
+        <li><a href="#">Impressum</a></li>
+        <li><a href="#">Datenschutz</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
