@@ -1,0 +1,11 @@
+Meeting: Sprint Planning Team Atlas
+Datum: 14.06.2026, 10:00 Uhr, Raum Berlin / Zoom
+Anwesend: Julia, Marco, Felix, Sina
+
+- Review letzter Sprint: API-Migration zu 80% fertig, Felix übernimmt Rest
+- Marco stellt neues Caching-Konzept vor, Team einverstanden, wird in Sprint 12 umgesetzt
+- Diskussion über Bug #482 (Login-Timeout) - Ursache noch unklar, Sina untersucht bis Freitag
+- Entscheidung: Wir wechseln ab nächstem Sprint auf wöchentliche Releases statt zweiwöchentlich
+- Julia kümmert sich um Stakeholder-Kommunikation zur neuen Release-Kadenz, bis 20.06.
+- Offen: Brauchen wir zusätzliches Budget für Monitoring-Tool? Marco klärt mit Finance bis Ende der Woche
+- Nächstes Sprint Planning: 28.06.2026
