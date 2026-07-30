@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- binder rings -->
+    <path android:fillColor="#1F3A93" android:pathData="M34,18 h6 v12 h-6 z" />
+    <path android:fillColor="#1F3A93" android:pathData="M68,18 h6 v12 h-6 z" />
+    <!-- calendar body -->
+    <path android:fillColor="#FFFFFF" android:pathData="M22,28 h64 v62 h-64 z" />
+    <!-- header band -->
+    <path android:fillColor="#1F3A93" android:pathData="M22,28 h64 v12 h-64 z" />
+    <!-- highlighted day -->
+    <path android:fillColor="#3457D5" android:pathData="M54,56 h16 v16 h-16 z" />
+</vector>

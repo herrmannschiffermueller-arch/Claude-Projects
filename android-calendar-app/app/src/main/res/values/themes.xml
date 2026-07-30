@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Only used as the window theme before the first Compose frame is drawn;
+        all real theming (colors, typography) lives in ui/theme/Theme.kt.
+    -->
+    <style name="Theme.CalendarApp" parent="android:Theme.DeviceDefault.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>
